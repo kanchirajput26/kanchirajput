@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Linkedin, Mail, FileDown, Send } from "lucide-react";
+import { Linkedin, Mail, FileDown, Send, Globe } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -27,7 +27,6 @@ const ContactSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Links */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -35,7 +34,7 @@ const ContactSection = () => {
             className="space-y-4"
           >
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/kanchirajput/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group"
@@ -45,12 +44,12 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-medium text-foreground text-sm">LinkedIn</p>
-                <p className="text-xs text-muted-foreground">Connect with me</p>
+                <p className="text-xs text-muted-foreground">linkedin.com/in/kanchirajput</p>
               </div>
             </a>
 
             <a
-              href="mailto:kanchi@usc.edu"
+              href="mailto:kanchira@usc.edu"
               className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -58,7 +57,22 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-medium text-foreground text-sm">Email</p>
-                <p className="text-xs text-muted-foreground">kanchi@usc.edu</p>
+                <p className="text-xs text-muted-foreground">kanchira@usc.edu</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.behance.net/kanchirajput"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Globe size={20} className="text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">Behance</p>
+                <p className="text-xs text-muted-foreground">behance.net/kanchirajput</p>
               </div>
             </a>
 
@@ -73,7 +87,6 @@ const ContactSection = () => {
             </button>
           </motion.div>
 
-          {/* Form */}
           <motion.form
             onSubmit={handleSubmit}
             initial={{ opacity: 0, y: 30 }}

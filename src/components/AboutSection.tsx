@@ -20,19 +20,39 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a Master's student at the <span className="text-foreground font-medium">University of Southern California</span> with a strong foundation in project management, construction management, and academic coordination.
+                I am an aspiring <span className="text-foreground font-medium">Project Manager and Product Intern</span> with experience in workflow automation, KPI tracking, Agile collaboration, and organizational change management.
               </p>
               <p>
-                My experience spans helping students master <span className="text-foreground font-medium">MS Project scheduling</span>, project planning, and resource management — bridging the gap between theory and practical application.
+                I focus on structured execution, data-driven visibility, and delivering projects on time and with clarity.
               </p>
             </div>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I'm deeply interested in <span className="text-foreground font-medium">Agile methodologies</span>, product thinking, and stakeholder collaboration. I believe great products emerge from structured processes, cross-functional teamwork, and continuous iteration.
-              </p>
-              <p>
-                Currently seeking internships in <span className="text-foreground font-medium">Project Management, Product Management, and Agile/Scrum</span> roles across the United States.
-              </p>
+            <div className="space-y-4">
+              <div className="glass-card rounded-xl p-5 space-y-3">
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">Name</span>
+                  <span className="text-foreground font-medium">Kanchi Rajput</span>
+                </div>
+                <div className="border-t border-border" />
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">Email</span>
+                  <a href="mailto:kanchira@usc.edu" className="text-primary hover:underline">kanchira@usc.edu</a>
+                </div>
+                <div className="border-t border-border" />
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/kanchirajput/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">kanchirajput</a>
+                </div>
+                <div className="border-t border-border" />
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">Behance</span>
+                  <a href="https://www.behance.net/kanchirajput" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">kanchirajput</a>
+                </div>
+                <div className="border-t border-border" />
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">Location</span>
+                  <span className="text-foreground font-medium">Los Angeles, CA</span>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
