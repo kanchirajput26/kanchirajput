@@ -14,7 +14,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-6">
-            Portfolio
+            Project Management & Product
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
             Kanchi Rajput
@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="text-primary">•</span> Agile
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-10">
-            Graduate student passionate about building products, managing complex projects, and improving processes.
+            Engineering Management graduate student at USC focused on project planning, workflow optimization, and cross-functional execution. Seeking Summer 2026 internships in Project Management, Product, and Agile roles across the U.S.
           </p>
         </motion.div>
 
@@ -50,7 +50,7 @@ const HeroSection = () => {
             Download Resume
           </a>
           <a
-            href="#contact"
+            href="mailto:kanchira@usc.edu"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-foreground hover:bg-secondary transition-colors"
           >
             <Mail size={16} />
