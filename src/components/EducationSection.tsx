@@ -34,7 +34,7 @@ const EducationSection = () => {
                   Master of Science in Engineering Management
                 </h3>
                 <p className="text-muted-foreground">University of Southern California, Los Angeles, CA</p>
-                <p className="text-xs text-primary mt-1">Expected Graduation: Dec 2026</p>
+                <p className="text-xs text-primary mt-1">Jan 2025 – Present</p>
               </div>
             </div>
             <div>
