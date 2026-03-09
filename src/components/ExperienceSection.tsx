@@ -3,8 +3,8 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    title: "Teaching Assistant — ISE 515: Engineering Project Management",
-    company: "University of Southern California",
+    title: "Teaching Assistant - ISE 515: Engineering Project Management",
+    company: "University of Southern California, Los Angeles, CA",
     period: "Jan 2026 – Present",
     description: [
       "Assist with grading assignments and exams for a cohort of 28 students",

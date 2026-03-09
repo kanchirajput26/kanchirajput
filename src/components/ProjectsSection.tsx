@@ -68,8 +68,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.7 }}
         >
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">Projects</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">Project Experience</h2>
-          <p className="text-muted-foreground mb-12">Professional & Academic Projects</p>
+          <h2 className="font-display text-3xl md:text-5xl font-bold mb-12">Professional & Academic Projects</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-1 gap-8">

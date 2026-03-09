@@ -89,6 +89,8 @@ const EducationSection = () => {
                   "Internet of Things",
                   "Operations Research",
                   "Total Quality Management",
+                  "Power Electronics",
+                  "Digital System Processing",
                 ].map((course) => (
                   <span
                     key={course}

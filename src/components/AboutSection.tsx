@@ -16,14 +16,14 @@ const AboutSection = () => {
           transition={{ duration: 0.7 }}
         >
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">About</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">Who I Am</h2>
+          <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">Who Am I</h2>
 
           <div className="grid md:grid-cols-[auto_1fr] gap-8 items-start">
             <div className="flex flex-col items-center md:items-start gap-5">
               <img
                 src={kanchiPhoto}
                 alt="Kanchi Rajput"
-                className="w-56 h-56 rounded-2xl object-cover border-2 border-primary/20 shrink-0"
+                className="w-56 h-full rounded-2xl object-cover border-2 border-primary/20 shrink-0"
               />
             </div>
 
