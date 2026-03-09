@@ -9,7 +9,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="section-padding" ref={ref}>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -18,51 +18,20 @@ const AboutSection = () => {
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">About</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">Who Am I</h2>
 
-          <div className="grid md:grid-cols-[auto_1fr] gap-8 items-start">
-            <div className="flex flex-col items-center md:items-start gap-5">
-              <img
-                src={kanchiPhoto}
-                alt="Kanchi Rajput"
-                className="w-56 h-full rounded-2xl object-cover border-2 border-primary/20 shrink-0"
-              />
-            </div>
+          <div className="grid md:grid-cols-[280px_1fr] gap-8 items-stretch">
+            <img
+              src={kanchiPhoto}
+              alt="Kanchi Rajput"
+              className="w-full h-full rounded-2xl object-cover border-2 border-primary/20"
+            />
 
-            <div className="space-y-6">
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  I am an aspiring <span className="text-foreground font-medium">Project Manager and Product Intern</span> with experience in workflow automation, KPI tracking, Agile collaboration, and organizational change management.
-                </p>
-                <p>
-                  I focus on structured execution, data-driven visibility, and delivering projects on time and with clarity.
-                </p>
-              </div>
-
-              <div className="glass-card rounded-xl p-5 space-y-3">
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Name</span>
-                  <span className="text-foreground font-medium">Kanchi Rajput</span>
-                </div>
-                <div className="border-t border-border" />
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Email</span>
-                  <a href="mailto:kanchira@usc.edu" className="text-primary hover:underline">kanchira@usc.edu</a>
-                </div>
-                <div className="border-t border-border" />
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">LinkedIn</span>
-                  <a href="https://www.linkedin.com/in/kanchirajput/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">kanchirajput</a>
-                </div>
-                <div className="border-t border-border" />
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Behance</span>
-                  <a href="https://www.behance.net/kanchirajput" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">kanchirajput</a>
-                </div>
-                <div className="border-t border-border" />
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Location</span>
-                  <span className="text-foreground font-medium">Los Angeles, CA</span>
-                </div>
-              </div>
+            <div className="flex flex-col justify-center space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                I am an aspiring <span className="text-foreground font-medium">Project and Product Manager</span>, pursuing a Master's in Engineering Management at USC with a background in Electronics and Communication Engineering, passionate about building impactful products and executing projects with clarity and structure. My experience spans product planning, user research, project scheduling, budgeting, NPV analysis, and workflow automation through JavaScript-based systems and MIS reporting to improve operational visibility and data-driven decision making. I focus on translating ideas into structured execution while aligning technology and business goals to deliver scalable solutions.
+              </p>
+              <p>
+                Currently, I serve as a Teaching Assistant for Engineering Project Management at USC, where I guide students in applying project planning frameworks, scheduling strategies, and systems thinking to real-world engineering challenges. I am currently exploring new grad full-time opportunities and internships in product and project management.
+              </p>
             </div>
           </div>
         </motion.div>
