@@ -41,7 +41,7 @@ const EducationSection = () => {
               <p className="text-xs uppercase tracking-wider text-primary font-medium mb-3">
                 Relevant Coursework
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+              <div className="flex flex-wrap gap-2">
                 {[
                   "Engineering Project Management (ISE 515)",
                   "Engineering Management of Systems Integration (ISE 519)",
@@ -50,7 +50,7 @@ const EducationSection = () => {
                 ].map((course) => (
                   <span
                     key={course}
-                    className="text-sm px-4 py-2 rounded-lg bg-secondary text-secondary-foreground text-center"
+                    className="text-xs font-normal px-3 py-1.5 rounded-full border border-border text-muted-foreground"
                   >
                     {course}
                   </span>
@@ -81,7 +81,7 @@ const EducationSection = () => {
               <p className="text-xs uppercase tracking-wider text-primary font-medium mb-3">
                 Relevant Coursework
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-2">
+              <div className="flex flex-wrap gap-2">
                 {[
                   "VLSI",
                   "Embedded System Design",
@@ -94,7 +94,7 @@ const EducationSection = () => {
                 ].map((course) => (
                   <span
                     key={course}
-                    className="text-sm px-4 py-2 rounded-lg bg-secondary text-secondary-foreground text-center"
+                    className="text-xs font-normal px-3 py-1.5 rounded-full border border-border text-muted-foreground"
                   >
                     {course}
                   </span>
