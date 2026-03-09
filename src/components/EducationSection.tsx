@@ -77,11 +77,11 @@ const EducationSection = () => {
                 <p className="text-xs text-primary mt-1">Aug 2020 – May 2024</p>
               </div>
             </div>
-            <div>
+            <div className="w-full">
               <p className="text-xs uppercase tracking-wider text-primary font-medium mb-3">
                 Relevant Coursework
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-2">
                 {[
                   "VLSI",
                   "Embedded System Design",
@@ -94,7 +94,7 @@ const EducationSection = () => {
                 ].map((course) => (
                   <span
                     key={course}
-                    className="text-sm px-4 py-2 rounded-lg bg-secondary text-secondary-foreground"
+                    className="text-sm px-4 py-2 rounded-lg bg-secondary text-secondary-foreground text-center"
                   >
                     {course}
                   </span>
