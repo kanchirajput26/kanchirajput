@@ -10,8 +10,25 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Create FormData and submit to FormSubmit
+    const formElement = e.target as HTMLFormElement;
+    const formData = new FormData(formElement);
+    
+    fetch('https://formsubmit.co/kanchira@usc.edu', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => {
+        if (response.ok) {
     toast.success("Message sent! I'll get back to you soon.");
     setForm({ name: "", email: "", message: "" });
+          } else {
+          toast.error("Failed to send message. Please try again.");
+        }
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Please try again.");
+      });
   };
 
   return (
@@ -96,6 +113,7 @@ const ContactSection = () => {
           >
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -104,6 +122,7 @@ const ContactSection = () => {
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -111,6 +130,7 @@ const ContactSection = () => {
               className="w-full bg-secondary text-foreground placeholder:text-muted-foreground rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
             />
             <textarea
+               name="message"
               placeholder="Your Message"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -118,6 +138,9 @@ const ContactSection = () => {
               required
               className="w-full bg-secondary text-foreground placeholder:text-muted-foreground rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-none"
             />
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <button
               type="submit"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity w-full justify-center"
